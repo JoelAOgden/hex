@@ -1,4 +1,4 @@
-package hexGrid
+package hex
 
 import (
 	"github.com/stretchr/testify/assert"

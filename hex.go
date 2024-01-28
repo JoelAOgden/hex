@@ -1,4 +1,4 @@
-package hexGrid
+package hex
 
 type AxialCoords struct {
 	q, r int
