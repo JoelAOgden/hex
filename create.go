@@ -25,7 +25,8 @@ func CreateHexGrid[T interface{}](radius uint) *HexGrid[T] {
 	}
 
 	return &HexGrid[T]{
-		hexes: hexes,
+		hexes:  hexes,
+		radius: radius,
 	}
 
 }

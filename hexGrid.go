@@ -3,7 +3,8 @@ package hex
 import "fmt"
 
 type HexGrid[T interface{}] struct {
-	hexes map[int]map[int]*Hex[T]
+	hexes  map[int]map[int]*Hex[T]
+	radius uint
 }
 
 func (h *HexGrid[T]) GetHex(q, r int) (*Hex[T], error) {
@@ -55,3 +56,5 @@ func (h *HexGrid[T]) GetNeighbours(q, r int) []*Hex[T] {
 	return out
 
 }
+
+func (h *HexGrid[T]) GetRadius() uint { return h.radius }
